@@ -33,8 +33,8 @@ export default function DetailsScreen({ route }) {
   return (
     <ScrollView style={styles.container}>
     <View style={styles.header}>
-      <Text style={styles.title}>{bottleData.name}</Text>
-      <Text style={styles.subtitle}>{bottleData.brand}</Text>
+      <Text style={styles.title}>{bottleData.brand}</Text>
+      <Text style={styles.subtitle}>{bottleData.name}</Text>
     </View>
 
     <View style={styles.detailsContainer}>
@@ -110,11 +110,6 @@ const styles = StyleSheet.create({
     padding: 16,
     marginBottom: 12,
     width: "48%",
-    shadowColor: "#000",
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.1,
-    shadowRadius: 4,
-    elevation: 3,
   },
   detailLabel: {
     fontSize: 12,
